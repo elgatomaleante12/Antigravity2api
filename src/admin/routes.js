@@ -3,7 +3,7 @@ import multer from 'multer';
 import archiver from 'archiver';
 import { createKey, loadKeys, deleteKey, updateKeyRateLimit, getKeyStats } from './key_manager.js';
 import { getRecentLogs, clearLogs, addLog } from './log_manager.js';
-import { getSystemStatus, incrementRequestCount } from './monitor.js';
+import { getSystemStatus, incrementRequestCount, getTodayRequestCount } from './monitor.js';
 import { loadAccounts, deleteAccount, toggleAccount, triggerLogin, getAccountStats, addTokenFromCallback, getAccountName, importTokens } from './token_admin.js';
 import { createSession, validateSession, destroySession, verifyPassword, adminAuth } from './session.js';
 import { loadSettings, saveSettings } from './settings_manager.js';
@@ -149,6 +149,16 @@ router.get('/status', async (req, res) => {
   try {
     const status = getSystemStatus();
     res.json(status);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
+// 获取今日请求统计
+router.get('/today-requests', async (req, res) => {
+  try {
+    const todayRequests = getTodayRequestCount();
+    res.json({ todayRequests });
   } catch (error) {
     res.status(500).json({ error: error.message });
   }

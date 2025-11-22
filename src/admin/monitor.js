@@ -4,9 +4,34 @@ import idleManager from '../utils/idle_manager.js';
 const startTime = Date.now();
 let requestCount = 0;
 
+// 今日请求统计
+let todayDate = new Date().toISOString().split('T')[0]; // YYYY-MM-DD
+let todayRequestCount = 0;
+
 // 增加请求计数
 export function incrementRequestCount() {
   requestCount++;
+
+  // 检查日期是否变化
+  const currentDate = new Date().toISOString().split('T')[0];
+  if (currentDate !== todayDate) {
+    // 日期变化，重置今日计数
+    todayDate = currentDate;
+    todayRequestCount = 0;
+  }
+
+  todayRequestCount++;
+}
+
+// 获取今日请求数
+export function getTodayRequestCount() {
+  // 再次检查日期，防止跨日后首次调用返回旧数据
+  const currentDate = new Date().toISOString().split('T')[0];
+  if (currentDate !== todayDate) {
+    todayDate = currentDate;
+    todayRequestCount = 0;
+  }
+  return todayRequestCount;
 }
 
 // 获取系统状态

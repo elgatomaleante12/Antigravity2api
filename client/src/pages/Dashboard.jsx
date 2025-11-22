@@ -20,17 +20,19 @@ export default function Dashboard() {
         const fetchData = async () => {
             try {
                 const headers = { 'X-Admin-Token': token };
-                const [keysRes, tokensRes, keyStatsRes, tokenStatsRes] = await Promise.all([
+                const [keysRes, tokensRes, keyStatsRes, tokenStatsRes, todayReqRes] = await Promise.all([
                     fetch('/admin/keys', { headers }),
                     fetch('/admin/tokens', { headers }),
                     fetch('/admin/keys/stats', { headers }),
-                    fetch('/admin/tokens/stats', { headers })
+                    fetch('/admin/tokens/stats', { headers }),
+                    fetch('/admin/today-requests', { headers })
                 ]);
 
                 const keys = await keysRes.json();
                 const tokens = await tokensRes.json();
                 const keyStats = await keyStatsRes.json();
                 const tokenStats = await tokenStatsRes.json();
+                const todayReq = await todayReqRes.json();
 
                 setStats({
                     keys: keys.length,
@@ -38,7 +40,7 @@ export default function Dashboard() {
                     keyRequests: keyStats.totalRequests || 0,
                     tokenEnabled: tokenStats.enabled || 0,
                     tokenDisabled: tokenStats.disabled || 0,
-                    todayRequests: 0
+                    todayRequests: todayReq.todayRequests || 0
                 });
             } catch (error) {
                 console.error('Failed to fetch dashboard data', error);
